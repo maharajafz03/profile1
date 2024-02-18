@@ -2,11 +2,11 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import AnimatedCursor from "react-animated-cursor";
-import HeroComponent from "./components/hero_section";
-import AboutSection from "./pages/about";
-import ExperienceSection from "./pages/experience";
-import ProjectsSection from "./pages/projects";
-import ContactSection from "./pages/contact";
+import Hero from "./components/Hero";
+import About from "./pages/About";
+//import Experience from "./pages/experience";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 const App = () => {
   useEffect(() => {
@@ -45,13 +45,13 @@ const App = () => {
               ".link",
             ]}
           />
-          <HeroComponent />
+          <Hero />
 
           <div className="xl:ml-[50%] lg:ml-[53%] lg:py-24 py-16 h-full">
-            <AboutSection />
-            <ExperienceSection />
-            <ProjectsSection />
-            <ContactSection />
+            <About />
+            {/* <Experience /> */}
+            <Projects />
+            <Contact />
           </div>
         </section>
       </main>

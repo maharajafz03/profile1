@@ -3,7 +3,7 @@ import { projects } from "../data/projects_data"
 
 
 
-const ProjectsSection = () => {
+const Projects = () => {
   return (
     <>
       <section data-aos="fade-up"
@@ -55,4 +55,4 @@ const ProjectsSection = () => {
   )
 }
 
-export default ProjectsSection
+export default Projects

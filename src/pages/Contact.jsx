@@ -1,4 +1,4 @@
-const ContactSection = () => {
+const Contact = () => {
   return (
     <>
       <section data-aos="fade-up"
@@ -18,4 +18,4 @@ const ContactSection = () => {
   )
 }
 
-export default ContactSection
+export default Contact;

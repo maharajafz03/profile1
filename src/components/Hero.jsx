@@ -1,7 +1,10 @@
 import React from "react";
-import { IoLogoGithub, IoLogoInstagram, IoLogoTwitter, IoLogoLinkedin } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoTwitter, IoLogoLinkedin } from 'react-icons/io5'
+import resume from '../assets/pdf/Resume.pdf'
+import { MdArrowOutward } from "react-icons/md";
 
-const HeroComponent = () => {
+
+const Hero = () => {
   const linksToSections = [
     { name: "About", path: "#about", active: false },
     // { name: "Experience", path: "#experience", active: false },
@@ -28,6 +31,17 @@ const HeroComponent = () => {
           <p className="mt-3 xl:max-w-[60%] xl:w-full lg:w-[80%] md:w-[50%] w-full text-gray-400 font-light text-base">
             I build pixel-perfect, accessible products for the web.
           </p>
+          <div data-aos="fade-up"
+          data-aos-duration="1000"
+          ata-aos-easing="ease-in" className="mt-8">
+          <a href={resume} target="_blank" rel="noreferrer" className="no-underline w-fit group outline-none font-[500] text-base text-white duration-300 ease-in hover:text-blue-300 flex gap-2 items-center">
+            <div>
+              View Full Résumé
+            </div>
+            <MdArrowOutward className="duration-300 ease-in group-hover:-translate-y-1 group-hover:translate-x-1" />
+          </a>
+        </div>
+ 
 
           <div className="mt-20 lg:block hidden">
             <div className="flex flex-col">
@@ -67,4 +81,4 @@ const HeroComponent = () => {
   );
 };
 
-export default HeroComponent;
+export default Hero;

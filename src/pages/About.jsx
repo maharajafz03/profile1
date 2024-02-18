@@ -1,4 +1,4 @@
-const AboutSection = () => {
+const About = () => {
   return (
     <>
       <section data-aos="fade-in"
@@ -33,4 +33,4 @@ My journey into the world of web development began as a self-taught programmer d
   )
 }
 
-export default AboutSection
+export default About;
